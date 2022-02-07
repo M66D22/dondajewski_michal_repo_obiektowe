@@ -5,18 +5,17 @@ public class GameLogic {
 
     public void game(){
         ArrayList<CardObjects> playerCards = new ArrayList();
+        ArrayList<CardObjects> dealerCards = new ArrayList();
         for (int i=0; i<2; i++){
             playerCards.add(cardDraw.draw());
+            dealerCards.add(cardDraw.draw());
         }
 
-        System.out.println(playerCards);
+        for (int i=0; i<2; i++){
+            System.out.println("Twoje karty: "+playerCards.get(i));
+        }
+        System.out.println("Krupiec posiada kartę: "+dealerCards.get(0));
+
     }
 
-    public void playerTour(){
-
-    }
-
-    public void oponentTour(){
-        
-    }
 }

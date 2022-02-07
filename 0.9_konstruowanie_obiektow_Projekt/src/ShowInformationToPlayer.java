@@ -27,4 +27,13 @@ public class ShowInformationToPlayer {
                 break;
         }
     }
+
+    public void showInformation(){
+        System.out.println("Podaj opcje, ktora chczesz wybrac: \n"+
+                "1) Rozpocznij Gre\n"+
+                "2) Wyjdz");
+    }
+    public void defaultInSwitch(){
+        System.out.println("Nie ma takiej opji!");
+    }
 }
